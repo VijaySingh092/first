@@ -1,0 +1,181 @@
+#root {
+  width: 100%;
+  height: 100vh;
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  padding:0;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+
+
+
+.text_color{
+  color: brown;
+}
+
+.txtcolor{
+  color: yellow;
+}
+
+
+
+
+
+
+
+
+
+/* App.css */
+
+body {
+  background-color: #f3f4f6; 
+  /* Light gray background */
+   font-family: 'Arial', sans-serif; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.styled-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+} */
+
+
+
+
+
+.forms-container {
+  display: flex; /* Use flexbox for side-by-side layout */
+  justify-content: space-between; /* Add space between forms */
+  gap: 20px; /* Space between the two forms */
+  width: 80%; /* Use a percentage width of the screen */
+  max-width: 1000px; /* Optional: set a maximum width for the container */
+  padding: 20px;
+}
+
+/* Each form container */
+.form-container {
+  width: 48%; /* Each form takes 48% of the available width, leaving space in between */
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the form elements (same as before) */
+.styled-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.form-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.form-control {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #555;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.form-check-input {
+  width: 18px;
+  height: 18px;
+}
+
+.form-check-label {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.form-text {
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 5px;
+}
+
+.btn {
+  padding: 12px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Focus effect for input */
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
